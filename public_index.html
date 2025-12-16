@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Drag & Drop File Uploader</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>拖拽文件上传</h1>
+
+    <div id="drop-area" class="drop-area">
+      <p>将文件拖入此处，或点击选择文件</p>
+      <button id="file-picker-btn">选择文件</button>
+      <input id="fileElem" type="file" multiple style="display:none" />
+    </div>
+
+    <div class="progress-wrap" id="progress-wrap" style="display:none">
+      <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+      <div id="progress-text">0%</div>
+    </div>
+
+    <h2>上传结果</h2>
+    <ul id="file-list"></ul>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
